@@ -9,7 +9,7 @@ export default function VanishingCard({
     const cardRef = useRef(null);
     const cardStyle = cn(
         "bg-[#1a171311] border-l-2 border-[var(--accent-golden)]/50 ring-1 ring-[var(--accent-golden)]/20",
-        "backdrop-blur-sm p-1 sm:p-3 max-w-md mx-auto mt-10 h-[33vh] sm:h-[25vh] w-[40vw] min-w-[250px] p-5",
+        "backdrop-blur-sm p-1 sm:p-3 max-w-md mx-auto mt-10 h-[33vh] sm:h-[25vh] max-h-[200px] w-[40vw] min-w-[250px] p-5",
         "text-white text-md sm:text-lg font-medium text-left",
         className,
     );
@@ -67,7 +67,7 @@ export default function VanishingCard({
     return (
         <div ref={cardRef} className={`vanishingCard ${cardStyle}`}>
             {Title && (
-                <h2 className="text-2xl font-bold italic text-[var(--accent-golden)] mb-4">
+                <h2 className="text-2xl font-bold italic text-[var(--accent-golden)]">
                     {Title}
                 </h2>
             )}

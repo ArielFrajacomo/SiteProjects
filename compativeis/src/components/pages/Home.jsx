@@ -87,7 +87,7 @@ export default function Home() {
                     className="absolute inset-0 hidden sm:block bg-[url(@/assets/Marcio-Side-transparent.png)] bg-fixed bg-contain bg-right bg-no-repeat [mask-image:linear-gradient(to_left,white_40%,white_70%,transparent_80%)] [-webkit-mask-image:linear-gradient(to_left,white_25%,white_55%,transparent_70%)]"
                 />
 
-                <div className="grid grid-cols-7 w-full sm:w-2/3 justify-start my-30 p-5 sm:p-10 gap-4 relative z-10">
+                <div className="grid grid-cols-7 w-full sm:w-2/3 justify-start my-20 p-5 sm:p-10 gap-4 relative z-10">
                     <VanishingCard
                         className="relative z-10 grid col-start-1 col-end-6"
                         Title="Você fez terapia?"

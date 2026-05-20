@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
-import NavBar from "../features/NavBar";
 
 export default function Header() {
     const logoRef = useRef(null);
@@ -98,7 +97,6 @@ export default function Header() {
             >
                 <span>C⚤MPATÍVEIS</span>
             </h1>
-            <NavBar className="fixed right-6 top-8 z-50" />
         </header>
     );
 }
