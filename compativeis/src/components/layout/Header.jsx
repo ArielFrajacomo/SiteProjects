@@ -91,7 +91,7 @@ export default function Header() {
                 ref={logoRef}
                 className={
                     pathname !== "/"
-                        ? "fixed left-4 top-4 z-50 text-2xl font-bold"
+                        ? "fixed left-4 top-4 z-50 text-2xl font-bold logo-sm"
                         : "fixed logo left-1/2 z-50 text-5xl sm:text-7xl font-bold will-change-transform"
                 }
             >

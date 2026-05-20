@@ -68,6 +68,23 @@ span {
     );
 }
 
+/* ── Logo shadows ── */
+.logo span,
+.logo-sm span {
+    text-shadow:
+        0 2px 20px rgba(0, 0, 0, 0.95),
+        0 1px 8px rgba(0, 0, 0, 0.9);
+}
+
+/* ── Opportunity section readability ── */
+#opportunity h2,
+#opportunity p,
+#opportunity span {
+    text-shadow:
+        0 2px 14px rgba(0, 0, 0, 0.9),
+        0 1px 5px rgba(0, 0, 0, 0.85);
+}
+
 .header-glass {
     @apply bg-black/30 border-l-2 border-[var(--accent-golden)]/50 ring-1 ring-[var(--accent-golden)]/20 backdrop-blur-sm;
 }
