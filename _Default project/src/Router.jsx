@@ -1,6 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "@/components/layout/MainLayout.jsx";
-import Home from "./components/pages/Home";
 
 const router = createBrowserRouter([
     // Created in en-US and pt-BR versions for better accessibility (and SEO)
@@ -10,8 +9,8 @@ const router = createBrowserRouter([
         errorElement: <div>Page not found</div>,
         children: [
             {
-                index: true, // Match the root path
-                element: <Home />,
+                path: true, // Match the root path
+                element: <div>Home Page</div>,
             },
         ],
     },
