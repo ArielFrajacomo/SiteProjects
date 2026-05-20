@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import FontCarousel from "../common/FontCarousel";
-import logoImage from "../../assets/marcio-transparent-small-cut.png";
+import logoImage from "../../assets/marcio-transparent-big-cut.png";
 import VanishingCard from "../ui/VanishingCard";
 import { cn } from "../../lib/utils";
 
@@ -273,7 +273,7 @@ export default function Home() {
             {/* ── opportunity ── */}
             <section
                 id="opportunity"
-                className="bg-gradient px-4 py-24 flex flex-col gap-8"
+                className="bg-gradient px-4 pb-24 flex flex-col gap-8"
             >
                 <p className="topicB">03 · Oportunidade</p>
 
@@ -314,7 +314,7 @@ export default function Home() {
             <div
                 id="prova"
                 className="relative bg-black/60 border-t border-[var(--accent-golden)]/10
-                           px-6 py-16 flex flex-col gap-10"
+                           px-6 pb-16 flex flex-col gap-10"
             >
                 <div
                     aria-hidden="true"
