@@ -7,9 +7,7 @@ export default function MainLayout() {
         <div className="flex flex-col min-h-screen">
             <Header />
             <Outlet />
-            <footer className="bg-gray-800 text-white p-4">
-                <Footer />
-            </footer>
+            <Footer />
         </div>
     );
 }

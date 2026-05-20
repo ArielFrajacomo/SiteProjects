@@ -8,10 +8,42 @@
 }
 
 :root {
+    --accent-golden: #c9a961;
     --accent-amber-gold: #d4a017;
     --accent-yellow-gold: #ffd700;
 }
 
+html,
+body {
+    @apply bg-gray-950 text-gray-100;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    overflow-x: clip;
+
+    @media (prefers-color-scheme: dark) {
+        color-scheme: dark;
+    }
+}
+
+span {
+    color: var(--accent-golden);
+}
+
+.topic {
+    font-family: "Montserrat", system-ui, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--accent-golden);
+
+    @apply sticky mt-10 sm:mt-4 top-16 sm:top-4 left-1/2 -translate-x-1/2 sm:left-4 sm:translate-x-0 z-[70] inline-block p-4;
+}
+.topicB {
+    font-family: "Montserrat", system-ui, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--accent-golden);
+
+    @apply sticky mt-4 top-4 left-4 z-[70] inline-block p-4;
+}
 .text-accent {
     background-image: linear-gradient(
         120deg,
@@ -36,21 +68,30 @@
     );
 }
 
-html,
-body {
-    @apply bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100;
-    font-family: "Cormorant Garamond", Georgia, serif;
-    overflow-x: hidden;
-
-    @media (prefers-color-scheme: dark) {
-        color-scheme: dark;
-    }
+.header-glass {
+    @apply bg-black/30 border-l-2 border-[var(--accent-golden)]/50 ring-1 ring-[var(--accent-golden)]/20 backdrop-blur-sm;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    @apply text-black dark:text-white font-semibold;
+
+/* ── Scroll Reveal ── */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translate3d(0, 28px, 0);
+    transition:
+        opacity 800ms ease,
+        transform 800ms cubic-bezier(0.22, 1, 0.36, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+    will-change: transform, opacity;
+}
+
+.reveal-on-scroll.in-view {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal-on-scroll {
+        transition: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
 }
