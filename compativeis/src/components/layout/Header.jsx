@@ -35,25 +35,40 @@ export default function Header() {
             const logoY = 80 - 77 * progress;
 
             if (minimized) {
+                const isTinyScreen = window.innerWidth < 400;
+                logo.classList.toggle("logo-compact", isTinyScreen);
+
+                logo.style.left = isTinyScreen
+                    ? `${window.innerWidth - 90}px`
+                    : `${window.innerWidth - 195}px`;
+
+                logo.style.transform =
+                    window.innerWidth < 640
+                        ? `translate3d(0, 1.95rem, 0)`
+                        : `translate3d(0, 2.6rem, 0)`;
+
                 if (transitionTimeout) clearTimeout(transitionTimeout);
                 logo.style.transition =
                     "left 0.3s ease, transform 0.3s ease, font-size 0.3s ease";
-                logo.style.fontSize = "1.5rem";
-                logo.style.left = `${window.innerWidth - 230}px`;
-                logo.style.transform = `translate3d(0, 2.5rem, 0)`;
+                logo.style.fontSize = "1.2rem";
+
                 headerRef.current?.classList.add("header-glass");
             } else {
                 if (wasMinimized) {
                     // Returning from minimized — animate back, then stop tracking.
+
                     logo.style.transition =
                         "left 0.3s ease, transform 0.3s ease, font-size 0.3s ease";
                     transitionTimeout = setTimeout(() => {
                         logo.style.transition = "";
-                    }, 350);
+                    }, 200);
                 } else {
                     // Normal scroll tracking — no transition delay.
                     logo.style.transition = "";
                 }
+
+                logo.classList.remove("logo-compact");
+
                 logo.style.fontSize = "";
                 logo.style.left = "50%";
                 logo.style.transform = `translate3d(-50%, ${logoY}vh, 0)`;
@@ -91,11 +106,14 @@ export default function Header() {
                 ref={logoRef}
                 className={
                     pathname !== "/"
-                        ? "fixed left-4 top-4 z-50 text-2xl font-bold logo-sm"
-                        : "fixed logo left-1/2 z-50 text-5xl sm:text-7xl font-bold will-change-transform"
+                        ? "fixed left-4 top-4 sm:top-4 z-50 font-bold logo-sm"
+                        : "fixed logo left-1/2 z-50 top-[0.6rem] sm:top-2 lg:top-0 text-3xl sm:text-4xl lg:text-7xl font-bold will-change-transform"
                 }
             >
-                <span>C⚤MPATÍVEIS</span>
+                <span className="logo-full">C⚤MPATÍVEIS</span>
+                <span className="logo-icon" aria-hidden="true">
+                    ⚤
+                </span>
             </h1>
         </header>
     );

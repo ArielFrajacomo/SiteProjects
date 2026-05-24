@@ -38,11 +38,11 @@ span {
 }
 .topicB {
     font-family: "Montserrat", system-ui, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--accent-golden);
 
-    @apply sticky mt-4 top-4 left-4 z-[70] inline-block p-4;
+    @apply sticky mt-4 top-5 left-4 z-[70] inline-block p-4;
 }
 .text-accent {
     background-image: linear-gradient(
@@ -74,6 +74,18 @@ span {
     text-shadow:
         0 2px 20px rgba(0, 0, 0, 0.95),
         0 1px 8px rgba(0, 0, 0, 0.9);
+}
+
+.logo-icon {
+    display: none;
+}
+
+.logo-compact .logo-full {
+    display: none;
+}
+
+.logo-compact .logo-icon {
+    display: inline;
 }
 
 /* ── Opportunity section readability ── */
