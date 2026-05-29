@@ -9,9 +9,9 @@ export function projects(){
             GitHubReadMe: "/compativeis/README.md"
         },
         {
-            Name: "Amazonia Caustics",
+            Name: "Amazonia Lumina",
             CompletionDate: "Em Breve",
-            Description: "A WebGL-based visual shader showing river flows and forest canopies, blending environmental sensors with artistic canvas reflections.",
+            Description: "A WebGL-based visual shader showing mercurial kinetic flows and canopy luminescence, blending environmental sensors with artistic reflections.",
             Link: "",
             TechStack: ["Three.js", "GLSL", "React Three Fiber", "Tailwind CSS"],
             GitHubReadMe: ""

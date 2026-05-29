@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
   <!-- SEO & Metadata -->
   <title>Ariel Frajacomo | Software Engineer & Creative Developer</title>
-  <meta name="description" content="Portfolio of Ariel Frajacomo - Software Engineer and Creative Developer based in Brazil. Showcasing highly tactile front-end systems, React, and co-created AI Vibe Coding."/>
-  
+  <meta name="description"
+    content="Portfolio of Ariel Frajacomo - Software Engineer and Creative Developer based in Brazil. Showcasing highly tactile front-end systems, React, and co-created AI Vibe Coding." />
+
   <!-- Open Graph -->
-  <meta property="og:title" content="Ariel Frajacomo | Creative Portfolio"/>
-  <meta property="og:description" content="Explore the projects and studies of a modern developer combining organic aesthetics with futuristic technology. Co-created using Vibe Coding."/>
-  <meta property="og:type" content="website"/>
-  
+  <meta property="og:title" content="Ariel Frajacomo | Creative Portfolio" />
+  <meta property="og:description"
+    content="Explore the projects and studies of a modern developer combining organic aesthetics with futuristic technology. Co-created using Vibe Coding." />
+  <meta property="og:type" content="website" />
+
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;500;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;500;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+
   <!-- Tailwind CSS Play CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -34,20 +39,21 @@
   </script>
 
   <!-- CSS Core Stylesheet -->
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="styles.css" />
 
   <!-- GSAP Core & ScrollTrigger CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  
+
   <!-- Iconify Icons -->
   <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 </head>
-<body class="wood-desktop-texture min-h-screen flex flex-col relative">
+
+<body class="regal-cyber-texture min-h-screen flex flex-col relative">
 
   <!-- Interactive Spotlight Shadow (cozy room desk lamp + monitor reflection) -->
   <div class="interactive-spotlight" id="spotlight"></div>
-  
+
   <!-- Tactile Noise Grain Overlay -->
   <div class="noise-overlay"></div>
 
@@ -55,7 +61,8 @@
   <div class="preloader-active" id="preloader">
     <div class="text-center">
       <div class="text-xs uppercase tracking-[0.4em] text-neutral-500 mb-2 font-mono">Carregando Universo</div>
-      <h2 class="text-3xl font-extrabold tracking-tighter text-white uppercase sm:text-5xl font-sans">ARIEL FRAJACOMO</h2>
+      <h2 class="text-3xl font-extrabold tracking-tighter text-white uppercase sm:text-5xl font-sans">ARIEL FRAJACOMO
+      </h2>
       <div class="preloader-wave mx-auto">
         <div class="preloader-progress" id="preloader-progress"></div>
       </div>
@@ -65,16 +72,23 @@
   <!-- Ambient Shifting Water Caustics (Absolute Background) -->
   <div class="relative w-full overflow-hidden min-h-screen flex flex-col z-10">
     <div class="water-flow-bg pointer-events-none"></div>
+    <div class="cyber-river-line pointer-events-none"></div>
 
     <!-- Header Navigation -->
-    <header class="w-full px-6 py-6 lg:px-16 flex justify-between items-center relative z-40 border-b border-white/5 bg-black/10 backdrop-blur-md">
+    <header
+      class="w-full px-6 py-6 lg:px-16 flex justify-between items-center relative z-40 border-b border-white/5 bg-black/10 backdrop-blur-md">
       <a class="flex items-center gap-3 group" href="#hero">
-        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-[#06b6d4] to-[#f59e0b] p-[1.5px] transition-transform duration-500 group-hover:rotate-180">
-          <div class="w-full h-full rounded-full bg-[#0d0a08] flex items-center justify-center text-xs font-bold text-white">AF</div>
+        <div
+          class="w-10 h-10 rounded-full bg-gradient-to-tr from-[#00f2fe] to-[#cbd5e1] p-[1.5px] transition-transform duration-500 group-hover:rotate-180">
+          <div
+            class="w-full h-full rounded-full bg-[#070403] flex items-center justify-center text-xs font-bold text-white">
+            <iconify-icon icon="la:fleur-de-lis" class="text-lg text-[#cbd5e1]"></iconify-icon>
+          </div>
         </div>
-        <span class="font-bold text-lg tracking-tight text-white group-hover:text-cyan-400 transition-colors">Ariel F.</span>
+        <span class="font-bold text-lg tracking-tight text-white group-hover:text-cyan-400 transition-colors">Ariel
+          F.</span>
       </a>
-      
+
       <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-400">
         <a class="hover:text-white transition-colors" href="#about">Quem Sou</a>
         <a class="hover:text-white transition-colors" href="#room">O Desk de Estudos</a>
@@ -83,7 +97,8 @@
       </nav>
 
       <div class="flex items-center gap-4">
-        <a class="px-5 py-2.5 rounded-none border border-[#06b6d4]/30 hover:border-[#06b6d4] text-xs font-semibold text-white uppercase tracking-widest bg-cyan-950/20 hover:bg-cyan-950/40 backdrop-blur-sm transition-all duration-300 shadow-[0_0_20px_rgba(6,182,212,0.1)] hover:shadow-[0_0_30px_rgba(6,182,212,0.3)]" href="#contact">
+        <a class="px-5 py-2.5 rounded-none border border-[#06b6d4]/30 hover:border-[#06b6d4] text-xs font-semibold text-white uppercase tracking-widest bg-cyan-950/20 hover:bg-cyan-950/40 backdrop-blur-sm transition-all duration-300 shadow-[0_0_20px_rgba(6,182,212,0.1)] hover:shadow-[0_0_30px_rgba(6,182,212,0.3)]"
+          href="#contact">
           Contato
         </a>
       </div>
@@ -93,30 +108,38 @@
     <main class="flex-grow relative z-20">
 
       <!-- Hero Section -->
-      <section id="hero" class="relative py-24 lg:py-36 px-6 lg:px-16 flex flex-col justify-center items-start max-w-7xl mx-auto min-h-[85vh]">
-        <div class="flex items-center gap-2 px-3 py-1.5 rounded-none badge-gold mb-6 animate-pulse">
-          <iconify-icon icon="lucide:map-pin" class="text-sm"></iconify-icon>
+      <section id="hero"
+        class="relative py-24 lg:py-36 px-6 lg:px-16 flex flex-col justify-center items-start max-w-7xl mx-auto min-h-[85vh]">
+        <div class="flex items-center gap-2 px-3 py-1.5 rounded-none badge-silver mb-6 animate-pulse">
+          <iconify-icon icon="la:fleur-de-lis" class="text-sm"></iconify-icon>
           <span class="text-xs font-mono uppercase tracking-widest font-medium">São Paulo, Brasil</span>
         </div>
-        
+
         <h1 class="text-5xl md:text-8xl font-extrabold tracking-tighter text-white leading-none mb-6">
-          Olá! Sou <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-cyan-400 to-[#f59e0b] text-glow-teal">Ariel.</span>
+          Olá! Sou <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-[#cbd5e1] via-[#00f2fe] to-[#94a3b8] text-glow-teal">Ariel.</span>
         </h1>
-        
+
         <h2 class="text-2xl md:text-4xl text-neutral-300 font-light tracking-tight max-w-3xl leading-relaxed mb-8">
-          Desenvolvedor de Software unindo a harmonia fluida da <span class="text-cyan-400 font-normal">água</span> com a base sólida da <span class="text-[#f59e0b] font-normal">madeira</span> para esculpir interfaces inovadoras.
+          Desenvolvedor de Software orquestrando sistemas reativos de <span class="text-slate-300 font-normal">altíssima
+            precisão</span> com a adaptabilidade fluida de <span class="text-cyan-400 font-normal">fluxos
+            inteligentes</span>.
         </h2>
-        
+
         <p class="text-base text-neutral-400 max-w-xl leading-relaxed mb-12 font-light">
-          Focado na criação de ecossistemas web limpos, eficientes e visualmente arrebatadores. Formando o futuro através do estudo rigoroso, paixão criativa e parcerias de inteligência artificial de ponta.
+          Focado na criação de ecossistemas web limpos, eficientes e visualmente sofisticados. Formando o futuro através
+          do estudo rigoroso, paixão criativa e parcerias de inteligência artificial de ponta.
         </p>
 
         <div class="flex flex-wrap gap-6 items-center">
-          <a class="px-8 py-4 rounded-none bg-gradient-to-r from-[#0f766e] to-[#06b6d4] text-sm font-bold text-white uppercase tracking-wider transition-all duration-300 hover:shadow-[0_0_40px_rgba(6,182,212,0.4)] group flex items-center gap-3" href="#projects">
-            Ver Projetos 
-            <iconify-icon icon="lucide:arrow-down" class="text-lg transition-transform group-hover:translate-y-1"></iconify-icon>
+          <a class="px-8 py-4 rounded-none bg-gradient-to-r from-[#1e293b] to-[#475569] text-sm font-bold text-white uppercase tracking-wider transition-all duration-300 hover:shadow-[0_0_40px_rgba(0,242,254,0.3)] border border-[#cbd5e1]/30 hover:border-[#00f2fe] group flex items-center gap-3"
+            href="#projects">
+            Ver Projetos
+            <iconify-icon icon="lucide:arrow-down"
+              class="text-lg transition-transform group-hover:translate-y-1"></iconify-icon>
           </a>
-          <a class="px-8 py-4 rounded-none border border-white/10 hover:border-white/30 text-sm font-bold text-white uppercase tracking-wider bg-transparent transition-all duration-300 hover:bg-white/5" href="#about">
+          <a class="px-8 py-4 rounded-none border border-white/10 hover:border-white/30 text-sm font-bold text-white uppercase tracking-wider bg-transparent transition-all duration-300 hover:bg-white/5"
+            href="#about">
             Sobre Mim
           </a>
         </div>
@@ -127,53 +150,69 @@
 
       <!-- About Section -->
       <section id="about" class="py-24 px-6 lg:px-16 bg-[#0a1118] relative overflow-hidden">
-        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(4,120,87,0.05),transparent_60%)] pointer-events-none"></div>
-        
+        <div
+          class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(4,120,87,0.05),transparent_60%)] pointer-events-none">
+        </div>
+
         <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-center relative z-10 reveal-content">
           <div class="lg:col-span-7 space-y-6">
-            <div class="flex items-center gap-3 badge-green px-3 py-1.5 w-max">
-              <iconify-icon icon="lucide:sparkles" class="text-sm"></iconify-icon>
+            <div class="flex items-center gap-3 badge-mercury px-3 py-1.5 w-max">
+              <iconify-icon icon="la:fleur-de-lis" class="text-sm"></iconify-icon>
               <span class="text-xs font-mono uppercase tracking-widest">Origens e Visão</span>
             </div>
-            
+
             <h2 class="text-3xl md:text-5xl font-extrabold tracking-tighter text-white">
-              De onde venho & Para onde vou
+              Herança Regente & Visão de Vanguarda
             </h2>
-            
+
             <p class="text-lg text-neutral-300 font-light leading-relaxed">
-              Vindo do Brasil, carrego a essência de um ecossistema vivo, caloroso e cheio de potencial. Minha filosofia de desenvolvimento mescla essa energia vibrante com um design limpo e estruturado.
+              Vindo do Brasil, trago a energia de uma herança vibrante e cheia de potencial sinergético. Minha filosofia
+              de desenvolvimento une essa paixão e calor com uma estruturação sofisticada e refinada de nível
+              internacional.
             </p>
-            
+
             <p class="text-neutral-400 leading-relaxed font-light">
-              Entendo o código como uma forma de artesanato digital. Assim como o escultor trabalha a madeira com precisão e a água molda as pedras com paciência, iago em cada projeto uma infraestrutura estável unida a interações ricas e experiências fluidas. Estou pronto para me integrar a equipes globais de alta performance, agregando valor técnico, comprometimento e otimismo ativo.
+              Entendo o código como uma forma de engenharia moderna e sofisticada. Assim como o cinzel esculpe o metal
+              nobre com absoluta precisão e a correnteza constante molda o terreno com persistência, orquestro em cada
+              projeto uma infraestrutura de alto desempenho unida a interações ricas e fluxos digitais dinâmicos. Estou
+              pronto para me integrar a equipes globais de alta performance, agregando valor técnico, comprometimento e
+              otimismo ativo.
             </p>
 
             <div class="grid grid-cols-2 gap-8 pt-6 border-t border-white/5">
               <div>
-                <h4 class="text-4xl font-bold text-emerald-400 tracking-tighter">100%</h4>
-                <p class="text-xs uppercase text-neutral-500 font-mono tracking-widest mt-1">Foco em Aprendizado Contínuo</p>
+                <h4 class="text-4xl font-bold text-[#00f2fe] tracking-tighter">100%</h4>
+                <p class="text-xs uppercase text-neutral-500 font-mono tracking-widest mt-1">Foco em Aprendizado
+                  Contínuo</p>
               </div>
               <div>
-                <h4 class="text-4xl font-bold text-cyan-400 tracking-tighter">AI-Native</h4>
-                <p class="text-xs uppercase text-neutral-500 font-mono tracking-widest mt-1">Fluxo de Trabalho do Futuro</p>
+                <h4 class="text-4xl font-bold text-[#cbd5e1] tracking-tighter">AI-Native</h4>
+                <p class="text-xs uppercase text-neutral-500 font-mono tracking-widest mt-1">Fluxo de Trabalho do Futuro
+                </p>
               </div>
             </div>
           </div>
 
           <div class="lg:col-span-5 relative">
-            <div class="relative w-full max-w-sm mx-auto aspect-square rounded-none bg-neutral-900 border border-white/10 p-4 floating-card-setup">
-              <div class="w-full h-full relative overflow-hidden bg-[#0d0a08] flex flex-col justify-between p-8 border border-white/5">
-                <div class="absolute inset-0 bg-gradient-to-b from-[#0f766e]/10 to-transparent pointer-events-none"></div>
+            <div
+              class="relative w-full max-w-sm mx-auto aspect-square rounded-none bg-neutral-900 border border-white/10 p-4 floating-card-setup">
+              <div
+                class="w-full h-full relative overflow-hidden bg-[#070403] flex flex-col justify-between p-8 border border-white/5">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#00f2fe]/10 to-transparent pointer-events-none">
+                </div>
                 <div class="flex justify-between items-start">
                   <iconify-icon icon="simple-icons:github" class="text-4xl text-neutral-400"></iconify-icon>
                   <div class="text-[10px] font-mono text-neutral-500">ARIEL.CONFIG</div>
                 </div>
                 <div class="space-y-4">
-                  <p class="font-mono text-xs text-[#f59e0b]">&gt; ariel --status</p>
-                  <p class="font-mono text-sm text-cyan-400">&quot;Focado em arquiteturas reativas, otimização visual e código que respira.&quot;</p>
+                  <p class="font-mono text-xs text-[#cbd5e1]">&gt; ariel --status</p>
+                  <p class="font-mono text-sm text-[#00f2fe]">&quot;Focado em arquiteturas reativas, otimização visual e
+                    fluxos integrados.&quot;</p>
                   <p class="font-mono text-xs text-neutral-500">&gt; location: São Paulo, BR</p>
                 </div>
-                <div class="h-1.5 w-full bg-white/5"><div class="h-full w-4/5 bg-emerald-500"></div></div>
+                <div class="h-1.5 w-full bg-white/5">
+                  <div class="h-full w-4/5 bg-[#00f2fe]"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -184,48 +223,55 @@
       <section id="room" class="py-24 px-6 lg:px-16 relative overflow-hidden bg-black/30">
         <div class="absolute inset-0 bg-gradient-to-b from-[#0a1118] to-transparent pointer-events-none"></div>
         <div class="max-w-7xl mx-auto relative z-10 reveal-content">
-          
+
           <div class="text-center mb-16 max-w-3xl mx-auto space-y-4">
             <div class="flex items-center gap-3 badge-neon px-3 py-1.5 w-max mx-auto">
-              <iconify-icon icon="lucide:monitor" class="text-sm"></iconify-icon>
+              <iconify-icon icon="la:fleur-de-lis" class="text-sm"></iconify-icon>
               <span class="text-xs font-mono uppercase tracking-widest">O Desk de Estudos</span>
             </div>
             <h2 class="text-3xl md:text-6xl font-extrabold tracking-tighter text-white">
               O Sentimento do Meu Quarto
             </h2>
             <p class="text-lg text-neutral-400 font-light">
-              Um ambiente simples, mas um universo de infinitas possibilidades. Onde a madeira da minha mesa se ilumina sob o monitor, e cada dia de estudos pavimenta o caminho para a carreira dos meus sonhos.
+              Um ambiente simples, mas um universo de infinitas possibilidades. Onde a superfície do meu desk se ilumina
+              sob o monitor, e cada dia de estudos pavimenta o caminho para a carreira dos meus sonhos.
             </p>
           </div>
 
           <!-- Desk Setup Interactive Layout -->
           <div class="grid lg:grid-cols-12 gap-8 items-stretch">
-            
+
             <!-- Desk Story Card -->
-            <div class="lg:col-span-5 p-8 floating-card-setup flex flex-col justify-between relative overflow-hidden group">
+            <div
+              class="lg:col-span-5 p-8 floating-card-setup flex flex-col justify-between relative overflow-hidden group">
               <div class="card-sheen"></div>
               <div class="space-y-6 relative z-10">
-                <div class="w-12 h-12 bg-amber-950/30 border border-[#f59e0b]/20 flex items-center justify-center rounded-none text-[#f59e0b]">
+                <div
+                  class="w-12 h-12 bg-[#140d0a] border border-[#cbd5e1]/20 flex items-center justify-center rounded-none text-[#cbd5e1]">
                   <iconify-icon icon="lucide:book-open" class="text-2xl"></iconify-icon>
                 </div>
                 <h3 class="text-2xl font-bold text-white">A Força da Dedicação</h3>
                 <p class="text-neutral-400 font-light leading-relaxed">
-                  Meu espaço de trabalho é onde a teoria se transforma em ferramentas práticas. Eu estudo diariamente engenharia de software de ponta, design system, e desenvolvimento moderno. Para mim, a programação não é apenas lógica; é um portal de realização profissional.
+                  Meu espaço de trabalho é onde a teoria se transforma em ferramentas práticas. Eu estudo diariamente
+                  engenharia de software de ponta, design system, e desenvolvimento moderno. Para mim, a programação não
+                  é apenas lógica; é um portal de realização profissional.
                 </p>
-                <blockquote class="border-l-2 border-[#f59e0b]/50 pl-4 py-1 italic text-neutral-400 text-sm">
-                  &quot;Cada linha de código que escrevo à noite é uma ponte em direção ao meu emprego dos sonhos em tecnologia.&quot;
+                <blockquote class="border-l-2 border-[#cbd5e1]/50 pl-4 py-1 italic text-neutral-400 text-sm">
+                  &quot;Cada linha de código que escrevo à noite é uma ponte em direção ao meu emprego dos sonhos em
+                  tecnologia.&quot;
                 </blockquote>
               </div>
               <div class="pt-8 border-t border-white/5 mt-8 flex justify-between items-center relative z-10">
-                <span class="text-xs font-mono text-neutral-500 uppercase tracking-widest">Rotina diária de aprendizado</span>
-                <span class="text-xs font-bold text-[#f59e0b] uppercase">Ativo</span>
+                <span class="text-xs font-mono text-neutral-500 uppercase tracking-widest">Rotina diária de
+                  aprendizado</span>
+                <span class="text-xs font-bold text-[#cbd5e1] uppercase">Ativo</span>
               </div>
             </div>
 
             <!-- Interactive Study Panel (Tabs / Stack) -->
             <div class="lg:col-span-7 p-8 floating-card-setup flex flex-col relative overflow-hidden monitor-glare">
               <div class="card-sheen"></div>
-              
+
               <!-- Tab Header representing Terminal or Code Editor -->
               <div class="flex items-center justify-between pb-6 border-b border-white/10 mb-6 relative z-10">
                 <div class="flex items-center gap-2">
@@ -239,7 +285,7 @@
 
               <!-- Terminal Stack -->
               <div class="flex-grow space-y-6 font-mono text-xs sm:text-sm text-neutral-300 relative z-10">
-                
+
                 <div>
                   <p class="text-neutral-500">&gt; npm run show-studies</p>
                   <p class="text-emerald-400 mt-1">✓ Carregando pilhas tecnológicas focadas no mercado...</p>
@@ -247,34 +293,41 @@
 
                 <div class="space-y-4 pt-2">
                   <!-- Front-end Row -->
-                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/5 pb-2">
+                  <div
+                    class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/5 pb-2">
                     <span class="text-white font-semibold flex items-center gap-2">
                       <iconify-icon icon="logos:react" class="text-base"></iconify-icon> Front-end Artistry
                     </span>
-                    <span class="text-cyan-400 text-xs font-light">React, Vite, Tailwind CSS, GSAP, SPA Architecture</span>
+                    <span class="text-cyan-400 text-xs font-light">React, Vite, Tailwind CSS, GSAP, SPA
+                      Architecture</span>
                   </div>
 
                   <!-- Back-end Row -->
-                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/5 pb-2">
+                  <div
+                    class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/5 pb-2">
                     <span class="text-white font-semibold flex items-center gap-2">
                       <iconify-icon icon="logos:nodejs-icon" class="text-base"></iconify-icon> Core Engineering
                     </span>
-                    <span class="text-cyan-400 text-xs font-light">Node.js, Express, ES Modules, RESTful APIs, Clean Architecture</span>
+                    <span class="text-cyan-400 text-xs font-light">Node.js, Express, ES Modules, RESTful APIs, Clean
+                      Architecture</span>
                   </div>
 
                   <!-- Future-proof Row -->
-                  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/5 pb-2">
+                  <div
+                    class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/5 pb-2">
                     <span class="text-white font-semibold flex items-center gap-2">
                       <iconify-icon icon="lucide:cpu" class="text-base text-cyan-400"></iconify-icon> Future-Proofing
                     </span>
-                    <span class="text-[#f59e0b] text-xs font-light">Vibe Coding, AI Co-creation, Prompt Engineering, Agentic Pipelines</span>
+                    <span class="text-[#cbd5e1] text-xs font-light">Vibe Coding, AI Co-creation, Prompt Engineering,
+                      Agentic Pipelines</span>
                   </div>
                 </div>
 
                 <div class="pt-4">
                   <p class="text-neutral-500">&gt; ariel --dream-job</p>
-                  <div class="p-3 bg-cyan-950/20 border border-cyan-800/30 rounded-none text-cyan-300 mt-2 text-xs">
-                    &quot;Buscando oportunidade como Desenvolvedor Júnior / Pleno em ambientes que valorizem proatividade, excelência visual e agilidade moderna no desenvolvimento.&quot;
+                  <div class="p-3 bg-[#140d0a] border border-slate-800/30 rounded-none text-[#00f2fe] mt-2 text-xs">
+                    &quot;Buscando oportunidade como Desenvolvedor Júnior / Pleno em ambientes que valorizem
+                    proatividade, excelência visual e agilidade moderna no desenvolvimento.&quot;
                   </div>
                 </div>
 
@@ -287,19 +340,22 @@
 
       <!-- Projects Section -->
       <section id="projects" class="py-24 px-6 lg:px-16 bg-[#060a0f] relative overflow-hidden">
-        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,rgba(6,182,212,0.06),transparent_60%)] pointer-events-none"></div>
+        <div
+          class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,rgba(6,182,212,0.06),transparent_60%)] pointer-events-none">
+        </div>
         <div class="max-w-7xl mx-auto relative z-10 reveal-content">
-          
+
           <div class="text-center mb-20 max-w-2xl mx-auto space-y-4">
             <div class="flex items-center gap-3 badge-neon px-3 py-1.5 w-max mx-auto">
-              <iconify-icon icon="lucide:layers" class="text-sm"></iconify-icon>
+              <iconify-icon icon="la:fleur-de-lis" class="text-sm"></iconify-icon>
               <span class="text-xs font-mono uppercase tracking-widest">Trabalhos Realizados</span>
             </div>
             <h2 class="text-3xl md:text-6xl font-extrabold tracking-tighter text-white uppercase">
               Projetos Atuais & Futuros
             </h2>
             <p class="text-lg text-neutral-400 font-light">
-              Uma visualização dinâmica dos meus desenvolvimentos. Do meu primeiro grande projeto a tudo aquilo que estou preparando para o futuro.
+              Uma visualização dinâmica dos meus desenvolvimentos. Do meu primeiro grande projeto a tudo aquilo que
+              estou preparando para o futuro.
             </p>
           </div>
 
@@ -315,33 +371,45 @@
       </section>
 
       <!-- Dedicated Vibe Coding Section -->
-      <section id="vibe-coding" class="py-24 px-6 lg:px-16 relative overflow-hidden bg-gradient-to-b from-[#060a0f] to-transparent">
+      <section id="vibe-coding"
+        class="py-24 px-6 lg:px-16 relative overflow-hidden bg-gradient-to-b from-[#060a0f] to-transparent">
         <div class="max-w-5xl mx-auto p-8 md:p-12 floating-card-setup relative overflow-hidden group reveal-content">
-          <div class="absolute -right-16 -top-16 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none group-hover:bg-cyan-500/20 transition-colors"></div>
+          <div
+            class="absolute -right-16 -top-16 w-64 h-64 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none group-hover:bg-cyan-500/20 transition-colors">
+          </div>
           <div class="card-sheen"></div>
 
           <div class="grid md:grid-cols-12 gap-8 items-center relative z-10">
             <div class="md:col-span-8 space-y-6">
               <div class="flex items-center gap-3 badge-neon px-3 py-1.5 w-max">
-                <iconify-icon icon="lucide:terminal" class="text-sm"></iconify-icon>
+                <iconify-icon icon="la:fleur-de-lis" class="text-sm"></iconify-icon>
                 <span class="text-xs font-mono uppercase tracking-widest">Inovação e Processo</span>
               </div>
               <h3 class="text-3xl font-extrabold text-white tracking-tight">
                 Construído via <span class="text-cyan-400 text-glow-teal font-mono">Vibe Coding</span>
               </h3>
               <p class="text-neutral-300 font-light leading-relaxed text-sm md:text-base">
-                Este portfólio não é apenas um site estático: é uma prova viva da minha agilidade tecnológica. Ele foi integralmente co-criado em tempo recorde através de <strong>Vibe Coding</strong> em parceria com a inteligência artificial agentica <strong>Antigravity (powered by Gemini)</strong>.
+                Este portfólio não é apenas um site estático: é uma prova viva da minha agilidade tecnológica. Ele foi
+                integralmente co-criado em tempo recorde através de <strong>Vibe Coding</strong> em parceria com a
+                inteligência artificial agentica <strong>Antigravity (powered by Gemini)</strong>.
               </p>
               <p class="text-neutral-400 font-light text-sm leading-relaxed">
-                Ao invés de me prender a tarefas mecânicas repetitivas, eu orchestrei os conceitos de design de água e madeira, o fluxo dinâmico dos projetos e a arquitetura semântica, delegando a execução técnica de alto padrão ao agente. Isso demonstra meu otimismo ativo, minha prontidão profissional e meu domínio total sobre as ferramentas de desenvolvimento do amanhã.
+                Ao invés de me prender a tarefas mecânicas repetitivas, eu orchestrei os conceitos de design mercúrio e
+                as texturas imperiais, o fluxo dinâmico dos projetos e a arquitetura semântica, delegando a execução
+                técnica de alto padrão ao agente. Isso demonstra meu otimismo ativo, minha prontidão profissional e meu
+                domínio total sobre as ferramentas de desenvolvimento do amanhã.
               </p>
             </div>
-            
+
             <div class="md:col-span-4 flex justify-center">
-              <div class="w-full max-w-[220px] aspect-square bg-[#0d0a08] border border-cyan-800/30 p-6 flex flex-col justify-between items-center text-center shadow-2xl relative">
-                <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(6,182,212,0.1),transparent_70%)] pointer-events-none"></div>
-                <div class="text-xs font-mono text-cyan-400 uppercase tracking-widest">VIBE STATUS</div>
-                <iconify-icon icon="lucide:cpu" class="text-5xl text-[#f59e0b] animate-spinSlow my-4" style="animation: spin 12s linear infinite;"></iconify-icon>
+              <div
+                class="w-full max-w-[220px] aspect-square bg-[#070403] border border-[#cbd5e1]/30 p-6 flex flex-col justify-between items-center text-center shadow-2xl relative">
+                <div
+                  class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,242,254,0.06),transparent_70%)] pointer-events-none">
+                </div>
+                <div class="text-xs font-mono text-[#cbd5e1] uppercase tracking-widest">VIBE STATUS</div>
+                <iconify-icon icon="lucide:cpu" class="text-5xl text-[#cbd5e1] animate-spinSlow my-4"
+                  style="animation: spin 12s linear infinite;"></iconify-icon>
                 <div class="text-[10px] font-mono text-neutral-500">CO-CREATOR READY</div>
               </div>
             </div>
@@ -351,11 +419,13 @@
 
       <!-- Contact & Hiring Section -->
       <section id="contact" class="py-24 px-6 lg:px-16 bg-[#0a1118] relative overflow-hidden">
-        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(245,158,11,0.04),transparent_60%)] pointer-events-none"></div>
+        <div
+          class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(245,158,11,0.04),transparent_60%)] pointer-events-none">
+        </div>
         <div class="max-w-4xl mx-auto text-center space-y-8 relative z-10 reveal-content">
-          
-          <div class="flex items-center gap-3 badge-gold px-3 py-1.5 w-max mx-auto">
-            <iconify-icon icon="lucide:send" class="text-sm"></iconify-icon>
+
+          <div class="flex items-center gap-3 badge-silver px-3 py-1.5 w-max mx-auto">
+            <iconify-icon icon="la:fleur-de-lis" class="text-sm"></iconify-icon>
             <span class="text-xs font-mono uppercase tracking-widest">Otimista & Pronto para Agir</span>
           </div>
 
@@ -364,20 +434,25 @@
           </h2>
 
           <p class="text-lg text-neutral-300 font-light max-w-2xl mx-auto leading-relaxed">
-            Estou em busca de projetos empolgantes e oportunidades em regime de tempo integral. Se você procura um desenvolvedor que domina a stack moderna, se adapta a novas tecnologias com extrema velocidade e tem sensibilidade estética, me envie uma mensagem!
+            Estou em busca de projetos empolgantes e oportunidades em regime de tempo integral. Se você procura um
+            desenvolvedor que domina a stack moderna, se adapta a novas tecnologias com extrema velocidade e tem
+            sensibilidade estética, me envie uma mensagem!
           </p>
 
-          <div class="h-16 w-px bg-gradient-to-b from-[#f59e0b] to-transparent mx-auto"></div>
+          <div class="h-16 w-px bg-gradient-to-b from-[#cbd5e1] to-transparent mx-auto"></div>
 
           <!-- Clean visual links -->
           <div class="flex flex-wrap justify-center gap-8 text-sm uppercase tracking-widest text-neutral-400">
-            <a class="hover:text-white transition-colors flex items-center gap-2 group" href="https://github.com/ArielFrajacomo" target="_blank">
+            <a class="hover:text-white transition-colors flex items-center gap-2 group"
+              href="https://github.com/ArielFrajacomo" target="_blank">
               <iconify-icon icon="simple-icons:github"></iconify-icon> GitHub
             </a>
-            <a class="hover:text-white transition-colors flex items-center gap-2 group" href="mailto:arielfrajacomo@hotmail.com">
+            <a class="hover:text-white transition-colors flex items-center gap-2 group"
+              href="mailto:arielfrajacomo@hotmail.com">
               <iconify-icon icon="lucide:mail"></iconify-icon> E-mail
             </a>
-            <a class="hover:text-white transition-colors flex items-center gap-2 group" href="https://linkedin.com" target="_blank">
+            <a class="hover:text-white transition-colors flex items-center gap-2 group" href="https://linkedin.com"
+              target="_blank">
               <iconify-icon icon="simple-icons:linkedin"></iconify-icon> LinkedIn
             </a>
           </div>
@@ -388,14 +463,16 @@
     </main>
 
     <!-- Footer -->
-    <footer class="w-full bg-[#050a0e] py-12 px-6 lg:px-16 border-t border-white/5 relative z-20">
+    <footer class="w-full bg-[#070403] py-12 px-6 lg:px-16 border-t border-white/5 relative z-20">
       <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
         <div>
-          <div class="text-xs font-mono text-neutral-500 uppercase tracking-widest">© 2026 Ariel Frajacomo. Todos os direitos reservados.</div>
+          <div class="text-xs font-mono text-neutral-500 uppercase tracking-widest">© 2026 Ariel Frajacomo. Todos os
+            direitos reservados.</div>
         </div>
         <div class="flex items-center gap-4 text-xs font-mono text-neutral-500">
           <span>Co-criado com</span>
-          <a class="text-cyan-400 hover:text-white transition-colors flex items-center gap-1" href="https://gemini.google" target="_blank">
+          <a class="text-cyan-400 hover:text-white transition-colors flex items-center gap-1"
+            href="https://gemini.google" target="_blank">
             <iconify-icon icon="logos:google-gemini" class="text-sm"></iconify-icon> Antigravity (Gemini)
           </a>
         </div>
@@ -407,4 +484,5 @@
   <!-- Core Javascript Module -->
   <script type="module" src="app.js"></script>
 </body>
+
 </html>
