@@ -8,7 +8,7 @@
 
 ## PT-BR / [EN-US](#en-us)
 
-Landing page premium e de alta conversão para o curso presencial de **Odontologia Digital e Cirurgia Guiada Navegada** ministrado pelo Dr. Wagner Bernardo. Desenvolvida para captar leads qualificados, a página apresenta o conteúdo científico e as simulações tecnológicas do treinamento presencial com um design impecável no estilo *dark & gold*.
+Landing page premium e para conversão do curso presencial de **Odontologia Digital e Cirurgia Guiada Navegada** ministrado pelo Dr. Wagner Bernardo. Desenvolvida para captar leads qualificados, a página apresenta o conteúdo científico e as simulações tecnológicas do treinamento presencial com um design impecável no estilo *dark & gold*.
 
 ---
 

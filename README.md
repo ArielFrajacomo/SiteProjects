@@ -14,7 +14,7 @@
 
 ## PT-BR / [EN-US](#en-us)
 
-Bem-vindo ao **SiteProjects**, o ecossistema central de engenharia e criação front-end de **Ariel Frajacomo** (Engenheiro de Software & Desenvolvedor Criativo baseado em São Paulo, Brasil). 
+Bem-vindo ao **SiteProjects**, o ecossistema central de engenharia e criação front-end de **Ariel Frajacomo** (Engenheiro de Software & Desenvolvedor Criativo baseado em São Paulo, Brasil).
 
 Este repositório serve como a vitrine do meu portfólio profissional, reunindo aplicações web premium, fluidas e com alta sensibilidade estética. Ele demonstra minha adaptabilidade técnica, rigor de código e minha proficiência em metodologias modernas de desenvolvimento de software, abrangendo desde a programação puramente artesanal até o estado da arte do *Vibe Coding* com inteligência artificial.
 
@@ -41,7 +41,7 @@ Como parte da minha visão profissional de desenvolvimento de software, os proje
 ### 🌿 1. Projetos Orgânicos (Organic)
 > Sistemas construídos integralmente de forma artesanal por mim, com design e codificação puramente manuais, sem a utilização de guias ou geração automática de código por IA.
 
-* ⚜️ **Compatíveis** ([Git Folder](https://github.com/ArielFrajacomo/SiteProjects/tree/master/compativeis) / [Live Site](https://site-projects-plum.vercel.app/))
+* ⚜️ **Compatíveis** ([Git Folder](https://github.com/ArielFrajacomo/SiteProjects/tree/master/compativeis) / [Live Site](http://www.compativeis-devclub.vercel.app/))
   * **Objetivo**: Site institucional premium com foco em conversão e captação de leads para o serviço de terapia e diagnóstico de casais do terapeuta Márcio Conceição.
   * **Destaques**: Identidade visual escura e dourada, camadas translúcidas sofisticadas e navegação de alta precisão.
 
@@ -117,7 +117,7 @@ As part of my professional engineering philosophy, projects in this workspace ar
 ### 🌿 1. Organic Projects
 > Built completely by hand. Designed, architected, and coded step-by-step without AI intervention or machine-generated boilerplates.
 
-* ⚜️ **Compatíveis** ([Git Folder](https://github.com/ArielFrajacomo/SiteProjects/tree/master/compativeis) / [Live Site](https://site-projects-plum.vercel.app/))
+* ⚜️ **Compatíveis** ([Git Folder](https://github.com/ArielFrajacomo/SiteProjects/tree/master/compativeis) / [Live Site](http://www.compativeis-devclub.vercel.app/))
   * **Goal**: A premium high-converting institutional website for Márcio Conceição's couples therapy business, geared toward lead generation and consultations.
   * **Highlights**: Elegant dark & gold identity, rich glassmorphic grids, and highly polished scroll reveal animations.
 
