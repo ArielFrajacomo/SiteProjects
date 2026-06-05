@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="preview-ready-after-ms" content="5000"/>
+<title>FLUX - Curso de Design de Movimento 3D</title>
+
+<!-- Tailwind CSS runtime (must remain in head; powers every utility class in body) -->
+<script src="assets/resource_3fa48481346f.js"></script>
+
+<!-- Iconify runtime — renders <iconify-icon> elements (Solar Duotone icon set) -->
+<script src="assets/iconify-icon_e19829e7f0e8.js"></script>
+
+<!-- fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="assets/css2_19fd9cc6b396.css" rel="stylesheet"/>
+<link href="assets/css2_86e10c4bcbd4.css" rel="stylesheet"/>
+<link href="assets/css2_0fc20595ebff.css" rel="stylesheet"/>
+<link href="assets/css2_23afcbef9bdd.css" rel="stylesheet"/>
+<link href="assets/css2_82ced711bf49.css" rel="stylesheet"/>
+<link href="assets/css2_fa22aa91016e.css" rel="stylesheet"/>
+<link href="assets/css2_2b2d87bc82d8.css" rel="stylesheet"/>
+<link href="assets/css2_4fef849c83da.css" rel="stylesheet"/>
+<link href="assets/css2_a7b22b336fe1.css" rel="stylesheet"/>
+<link href="assets/css2_0b2072b66163.css" rel="stylesheet"/>
+<link href="assets/css2_9b8bf743d4a8.css" rel="stylesheet"/>
+<link href="assets/css2_8e191ef32247.css" rel="stylesheet"/>
+<link href="assets/css2_70fd47a02eed.css" rel="stylesheet"/>
+<link href="assets/css2_b52fc18295f8.css" rel="stylesheet"/>
+<link href="assets/css2_62759cd015bd.css" rel="stylesheet"/>
+<link href="assets/css2_f495c2faa2a6.css" rel="stylesheet"/>
+<link href="assets/css2_6f16cdd6fd9f.css" rel="stylesheet"/>
+<link href="assets/css2_94cb6f0c406a.css" rel="stylesheet"/>
+
+<!-- css -->
+<!-- base body palette and .text-glow text-shadow used in hero/pricing -->
+<link rel="stylesheet" href="assets/css/base.css"/>
+<!-- font utility classes (.font-geist, .font-roboto, etc.) bound to the @font-face files above -->
+<link rel="stylesheet" href="assets/css/fonts.css"/>
+<!-- gradient-border helper for elements with --border-gradient custom property (pricing cards, plan toggle) -->
+<link rel="stylesheet" href="assets/css/border-gradient.css"/>
+</head>
+<body class="antialiased selection:bg-indigo-500/30">
+
+<!-- background -->
+<div class="aura-background-component top-0 w-full -z-10 absolute h-[800px] hue-rotate-90 brightness-125 opacity-40" data-alpha-mask="80" style="mask-image: linear-gradient(to bottom, transparent, black 0%, black 80%, transparent); -webkit-mask-image: linear-gradient(to bottom, transparent, black 0%, black 80%, transparent)">
+<div class="aura-background-component top-0 w-full -z-10 absolute h-full">
+<div class="absolute w-full h-full left-0 top-0 -z-10" data-us-project="HzcaAbRLaALMhHJp8gLY"></div>
+</div>
+</div>
+
+<!-- background-grid -->
+<div class="fixed inset-0 z-0 bg-grid-pattern bg-[length:4rem_4rem] pointer-events-none"></div>
+
+<!-- navigation -->
+<nav class="z-50 sticky bg-[#0b0c15]/60 w-full border-white/5 border-b top-0 backdrop-blur-lg">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-12">
+<a class="inline-flex items-center justify-center bg-center w-[140px] h-[36px] bg-[url(https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/3b763a66-5dbf-4079-af7e-a616cc333698_320w.png)] bg-cover rounded-full" href="#"></a>
+<div class="hidden md:flex items-center gap-8 text-xs font-medium tracking-widest text-slate-400 uppercase">
+<a class="flex items-center gap-2 text-white border-b pb-0.5 border-orange-400" href="#">
+<iconify-icon class="text-orange-400" icon="solar:layers-minimalistic-bold-duotone"></iconify-icon>
+Currículo
+</a>
+<a class="hover:text-white transition-colors" href="#">Workshops</a>
+<a class="hover:text-white transition-colors" href="#">Mentores</a>
+<a class="hover:text-white transition-colors" href="#">Comunidade</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<a class="hidden md:block text-xs font-medium tracking-widest text-slate-400 uppercase hover:text-white transition-colors" href="#">Entrar</a>
+<button class="text-white">
+<iconify-icon icon="solar:hamburger-menu-bold-duotone" width="24"></iconify-icon>
+</button>
+</div>
+</div>
+</nav>
+
+<!-- hero -->
+<header class="z-10 overflow-hidden border-white/5 border-b pt-20 pb-32 relative">
+<div class="max-w-7xl mx-auto px-6 relative">
+<div class="max-w-3xl">
+<div class="flex items-center gap-3 mb-6">
+<span class="inline-flex items-center justify-center w-2 h-2 rounded-full animate-pulse bg-orange-500"></span>
+<span class="text-xs font-medium tracking-widest uppercase text-orange-300">Próxima turma: 12 de outubro de 2024</span>
+</div>
+<h1 class="text-6xl md:text-8xl font-medium tracking-tighter leading-[0.9] text-white mb-8 text-glow">
+Sistemas
+<br/>
+Cinéticos
+<br/>
+Avançados 3D
+</h1>
+<p class="text-lg text-slate-400 max-w-md leading-relaxed mb-10">Domine modelagem procedural e técnicas de animação cinética. Um mergulho profundo de 12 semanas no futuro do design de movimento.</p>
+</div>
+<div class="absolute top-1/2 -right-20 -translate-y-1/2 w-[600px] h-[600px] hidden lg:block">
+<img alt="Esfera" class="opacity-90 w-full h-full object-contain rounded-full drop-shadow-2xl" src="assets/a6add742-6a55-445d-b07d-92ef48_5109995cf622.jpg"/>
+</div>
+</div>
+</header>
+
+<!-- weeks-grid -->
+<section class="border-b border-white/5 relative z-20 bg-dark/50 backdrop-blur-md">
+<div class="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-white/5 max-w-7xl mx-auto">
+<div class="p-8 group hover:bg-white/[0.02] transition-colors cursor-pointer">
+<span class="text-xs font-medium text-slate-500 uppercase tracking-widest mb-2 block">Módulo 01</span>
+<h3 class="text-xl font-medium text-white tracking-tight mb-1 transition-colors group-hover:text-orange-400">Fundamentos</h3>
+<p class="text-sm text-slate-400">Topologia &amp; Formas</p>
+</div>
+<div class="p-8 group hover:bg-white/[0.02] transition-colors cursor-pointer">
+<span class="text-xs font-medium text-slate-500 uppercase tracking-widest mb-2 block">Módulo 02</span>
+<h3 class="text-xl font-medium text-white tracking-tight mb-1 transition-colors group-hover:text-orange-400">Sombreamento</h3>
+<p class="text-sm text-slate-400">Texturas Avançadas</p>
+</div>
+<div class="p-8 group hover:bg-white/[0.02] transition-colors cursor-pointer">
+<span class="text-xs font-medium text-slate-500 uppercase tracking-widest mb-2 block">Módulo 03</span>
+<h3 class="text-xl font-medium text-white tracking-tight mb-1 transition-colors group-hover:text-orange-400">Dinâmicas</h3>
+<p class="text-sm text-slate-400">Motores Físicos</p>
+</div>
+<div class="relative p-8 bg-panel border-b-2 md:border-b-0 md:border-t-2 border-orange-500 md:border-t-orange-500">
+<div class="absolute inset-0 bg-orange-500/5"></div>
+<span class="relative text-xs font-medium uppercase tracking-widest mb-2 block text-orange-400">Módulo 04</span>
+<h3 class="relative text-xl font-medium text-white tracking-tight mb-1">Iluminação</h3>
+<p class="relative text-sm text-slate-400">Render Cinematográfico</p>
+</div>
+</div>
+</section>
+
+<!-- feature-detail -->
+<section class="overflow-hidden border-white/5 border-b relative">
+<div class="grid grid-cols-1 lg:grid-cols-2 min-h-[600px] max-w-7xl mr-auto ml-auto">
+<div class="lg:border-b-0 lg:border-r flex border-white/5 border-b pt-12 pr-12 pb-12 pl-12 relative items-center justify-center">
+<div class="aspect-square w-full max-w-md relative">
+<img alt="Retrato com headset VR iluminado em vermelho" class="transition-all duration-500 ease-out transform mix-blend-lighten w-full h-full object-cover" id="crs-img-v2" src="assets/e135f35b-eaeb-4b52-b2df-a96902_511b08f5e61b.jpg"/>
+<div class="absolute bottom-10 left-10 text-9xl font-semibold text-white/5 select-none transition-all duration-500 ease-out transform" id="crs-num-v2">01</div>
+</div>
+</div>
+<div class="p-12 lg:p-20 flex flex-col justify-center">
+<span class="text-xs font-medium uppercase tracking-widest mb-6 text-orange-400 block transition-all duration-300 ease-out transform" id="crs-sub">Módulo 01</span>
+<h2 class="lg:text-5xl transition-all duration-300 ease-out min-h-[2.4em] transform text-4xl font-medium text-white tracking-tight mb-6" id="crs-title">Fundamentos de Topologia</h2>
+<p class="text-lg text-slate-400 mb-10 leading-relaxed font-light transition-all duration-300 ease-out min-h-[6em] transform" id="crs-desc">Domine o básico da geometria 3D. Aprenda fluxo de arestas, gerenciamento de polígonos e como construir modelos limpos prontos para animação e deformações complexas.</p>
+<div class="flex items-center gap-8 mb-16">
+<button class="text-dark uppercase hover:bg-slate-700 transition-colors text-xs font-semibold tracking-widest bg-slate-800 pt-4 pr-8 pb-4 pl-8">Ver Ementa</button>
+<a class="text-xs font-semibold tracking-widest uppercase text-white border-b border-white/30 pb-1 hover:border-white transition-colors" href="#">Baixar Materiais</a>
+</div>
+<div class="flex items-center gap-1 border border-white/10 w-fit p-1">
+<button class="flex hover:bg-white/5 hover:text-white transition-colors group text-slate-400 w-12 h-12 border-white/5 border-r items-center justify-center" id="btn-prev">
+<iconify-icon class="group-hover:-translate-x-0.5 transition-transform" icon="solar:arrow-left-linear" width="20"></iconify-icon>
+</button>
+<button class="flex hover:bg-white/5 hover:text-white transition-colors group text-slate-400 w-12 h-12 items-center justify-center" id="btn-next">
+<svg class="group-hover:translate-x-0.5 transition-transform" data-icon-set="solar" data-solar="arrow-right-linear" height="1em" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M4 12h16m0 0l-6-6m6 6l-6 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg>
+</button>
+</div>
+<div class="mt-4 flex gap-6 text-xs text-slate-600 font-medium" id="crs-dots">
+<button class="text-white transition-colors duration-300">01</button>
+<button class="text-slate-600 hover:text-slate-400 transition-colors duration-300">02</button>
+<button class="text-slate-600 hover:text-slate-400 transition-colors duration-300">03</button>
+<button class="text-slate-600 hover:text-slate-400 transition-colors duration-300">04</button>
+</div>
+</div>
+</div>
+</section>
+
+<!-- creative-platform -->
+<section class="overflow-hidden bg-[#0B0C15] border-white/5 border-b pt-24 pb-24 relative">
+<div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[500px] h-[500px] bg-orange-500/10 blur-[100px] rounded-full pointer-events-none"></div>
+<div class="z-10 max-w-7xl mr-auto ml-auto pr-6 pl-6 relative">
+<div class="flex flex-col md:flex-row md:items-end gap-8 mb-16 gap-x-8 gap-y-8 justify-between">
+<div class="max-w-2xl">
+<h2 class="text-4xl md:text-5xl font-medium text-white tracking-tight leading-none mb-6">A Plataforma Criativa</h2>
+<p class="text-lg text-slate-400 leading-relaxed max-w-md font-light">Mais do que apenas videoaulas. Acesse um ecossistema completo projetado para acelerar sua maestria em design de movimento 3D.</p>
+</div>
+<div class="flex items-center gap-4 text-xs font-medium tracking-widest uppercase mb-2 text-orange-400">
+<span class="w-8 h-[1px] bg-orange-500"></span>
+Incluso em todos os planos
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 overflow-hidden bg-white/10 z-20 border-white/5 border gap-x-px gap-y-px">
+<div class="md:col-span-2 group overflow-hidden min-h-[320px] bg-[#0B0C15] z-20 relative">
+<div class="overflow-hidden z-20 w-2/3 h-full absolute top-0 right-0">
+<div class="z-10 bg-gradient-to-r from-[#0B0C15] via-[#0B0C15]/50 to-transparent absolute top-0 right-0 bottom-0 left-0"></div>
+<img alt="Materiais" class="group-hover:opacity-60 group-hover:grayscale-0 transition-all duration-700 ease-out transform group-hover:scale-105 opacity-40 w-full h-full object-cover z-20 grayscale" src="assets/e2a6572b-2fda-41e6-833d-041a0b_f64adea5a5d6.webp"/>
+</div>
+<div class="z-20 flex flex-col h-full pt-10 pr-10 pb-10 pl-10 relative justify-between">
+<div class="flex group-hover:border-orange-500/50 group-hover:text-orange-400 transition-colors text-white bg-white/5 w-12 h-12 border-white/10 border rounded-full mb-6 items-center justify-center">
+<svg data-icon-set="solar" data-solar="box-minimalistic-bold-duotone" height="1em" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M8.422 20.618C10.178 21.54 11.056 22 12 22V12L2.638 7.073l-.04.067C2 8.154 2 9.417 2 11.942v.117c0 2.524 0 3.787.597 4.801c.598 1.015 1.674 1.58 3.825 2.709z" fill="currentColor"/><path d="m17.577 4.432l-2-1.05C13.822 2.461 12.944 2 12 2c-.945 0-1.822.46-3.578 1.382l-2 1.05C4.318 5.536 3.242 6.1 2.638 7.072L12 12l9.362-4.927c-.606-.973-1.68-1.537-3.785-2.641" fill="currentColor" opacity=".7"/><path d="m21.403 7.14l-.041-.067L12 12v10c.944 0 1.822-.46 3.578-1.382l2-1.05c2.151-1.129 3.227-1.693 3.825-2.708c.597-1.014.597-2.277.597-4.8v-.117c0-2.525 0-3.788-.597-4.802" fill="currentColor" opacity=".5"/></svg>
+</div>
+<div>
+<h3 class="text-2xl font-medium text-white tracking-tight mb-2">Materiais de Produção</h3>
+<p class="text-sm text-slate-400 max-w-xs leading-relaxed">Baixe mais de 500GB de arquivos de projeto, texturas em 4K, mapas HDRI e nós procedurais. Seus para sempre, inclusive para uso comercial.</p>
+</div>
+</div>
+</div>
+<div class="bg-[#0B0C15] group relative overflow-hidden min-h-[320px]">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-white/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="relative z-20 p-10 flex flex-col justify-between h-full">
+<div class="flex group-hover:border-orange-500/50 group-hover:text-orange-400 transition-colors text-white bg-white/5 w-12 h-12 border-white/10 border rounded-full mb-6 items-center justify-center">
+<svg data-icon-set="solar" data-solar="infinity-bold-duotone" height="1em" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M2.75 12a4.25 4.25 0 0 1 6.8-3.4a.75.75 0 1 0 .901-1.2A5.75 5.75 0 1 0 7 17.75c.784 0 1.464-.143 2.064-.435s1.079-.714 1.489-1.215c.66-.804 1.196-1.894 1.776-3.074l.339-.689a.755.755 0 0 0-.339-1.008a.745.745 0 0 0-1.003.337l-.366.743c-.584 1.183-1.027 2.082-1.567 2.74c-.307.375-.624.64-.986.817s-.81.284-1.407.284A4.25 4.25 0 0 1 2.75 12" fill="currentColor" fill-rule="evenodd"/><path d="M12.67 12.335a.755.755 0 0 0-.34-1.006a.746.746 0 0 0-.975.284q.162-.323.316-.639c.58-1.18 1.117-2.27 1.776-3.074c.41-.501.89-.923 1.49-1.215S16.217 6.25 17 6.25a5.75 5.75 0 1 1-3.45 10.35a.75.75 0 0 1 .9-1.2A4.25 4.25 0 1 0 17 7.75c-.596 0-1.045.107-1.406.284c-.363.176-.68.442-.987.816c-.54.66-.983 1.558-1.567 2.741q-.174.355-.369.744z" fill="currentColor" opacity=".5"/></svg>
+</div>
+<div>
+<h3 class="text-2xl font-medium text-white tracking-tight mb-2">Player 4K HDR</h3>
+<p class="text-sm text-slate-400 leading-relaxed">Veja cada detalhe com nosso player de streaming customizado em alta taxa de bits. Capítulos inteligentes e discussões com timestamp incluídos.</p>
+</div>
+</div>
+</div>
+<div class="bg-[#0B0C15] group relative overflow-hidden min-h-[320px]">
+<div class="z-20 flex flex-col h-full pt-10 pr-10 pb-10 pl-10 relative justify-between">
+<div class="flex group-hover:border-orange-500/50 group-hover:text-orange-400 transition-colors text-white bg-white/5 w-12 h-12 border-white/10 border rounded-full mb-6 items-center justify-center">
+<svg class="w-[24px] h-[16px]" data-icon-replaced="true" data-icon-set="solar" data-solar="users-group-rounded-bold-duotone" height="16" stroke-width="2" style="color: rgb(251, 146, 60); width: 24px; height: 16px" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="6" fill="#fb923c" opacity=".4" r="3"/><ellipse cx="16" cy="17" fill="#fb923c" opacity=".4" rx="5" ry="3"/><circle cx="9.001" cy="6" fill="#fb923c" r="4"/><ellipse cx="9.001" cy="17.001" fill="#fb923c" rx="7" ry="4"/></svg>
+</div>
+<div>
+<h3 class="text-2xl font-medium text-white tracking-tight mb-2">Discord Privado</h3>
+<p class="text-sm text-slate-400 leading-relaxed">Junte-se a mais de 5.000 ex-alunos. Receba feedback no seu trabalho, encontre parceiros de colaboração e acesse vagas exclusivas.</p>
+</div>
+</div>
+</div>
+<div class="md:col-span-2 bg-[#0B0C15] group relative overflow-hidden min-h-[320px]">
+<div class="-bottom-24 -right-24 transition-all duration-700 group-hover:opacity-40 group-hover:rotate-12 opacity-20 w-96 h-96 absolute">
+<img alt="Abstrato" class="mask-image-radial group-hover:opacity-60 group-hover:grayscale-0 transition-all duration-700 ease-out transform group-hover:scale-105 opacity-40 mix-blend-screen w-full h-full object-cover z-20 rounded-full grayscale" src="assets/ea262fd9-14f0-4917-be69-86fd3b_a85cd3940b44.webp"/>
+</div>
+<div class="flex flex-col z-20 h-full pt-10 pr-10 pb-10 pl-10 relative justify-between">
+<div class="flex group-hover:border-orange-500/50 group-hover:text-orange-400 transition-colors text-white bg-white/5 w-12 h-12 border-white/10 border rounded-full mb-6 items-center justify-center">
+<svg data-icon-set="solar" data-solar="infinity-bold-duotone" height="1em" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M2.75 12a4.25 4.25 0 0 1 6.8-3.4a.75.75 0 1 0 .901-1.2A5.75 5.75 0 1 0 7 17.75c.784 0 1.464-.143 2.064-.435s1.079-.714 1.489-1.215c.66-.804 1.196-1.894 1.776-3.074l.339-.689a.755.755 0 0 0-.339-1.008a.745.745 0 0 0-1.003.337l-.366.743c-.584 1.183-1.027 2.082-1.567 2.74c-.307.375-.624.64-.986.817s-.81.284-1.407.284A4.25 4.25 0 0 1 2.75 12" fill="currentColor" fill-rule="evenodd"/><path d="M12.67 12.335a.755.755 0 0 0-.34-1.006a.746.746 0 0 0-.975.284q.162-.323.316-.639c.58-1.18 1.117-2.27 1.776-3.074c.41-.501.89-.923 1.49-1.215S16.217 6.25 17 6.25a5.75 5.75 0 1 1-3.45 10.35a.75.75 0 0 1 .9-1.2A4.25 4.25 0 1 0 17 7.75c-.596 0-1.045.107-1.406.284c-.363.176-.68.442-.987.816c-.54.66-.983 1.558-1.567 2.741q-.174.355-.369.744z" fill="currentColor" opacity=".5"/></svg>
+</div>
+<div class="max-w-lg relative">
+<h3 class="text-2xl font-medium text-white tracking-tight mb-2">Atualizações Vitalícias do Currículo</h3>
+<p class="text-sm text-slate-400 leading-relaxed">A indústria evolui rápido. Lançamos atualizações trimestrais para cobrir novos recursos no Blender, Cinema 4D e Unreal Engine 5 sem custo adicional para alunos matriculados.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- mentors -->
+<section class="z-10 border-white/5 border-b pt-24 pb-24 relative">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
+<div>
+<h2 class="text-4xl md:text-5xl font-medium text-white tracking-tight leading-none mb-4">Mentores da Indústria</h2>
+</div>
+<div class="flex items-center gap-4 text-xs font-medium tracking-widest uppercase mb-2 text-orange-400">
+<span class="w-8 h-[1px] bg-orange-500"></span>
+Aprenda com os melhores
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/5 border border-white/5">
+<div class="bg-panel p-0 group relative overflow-hidden">
+<div class="aspect-[4/3] bg-slate-800 relative overflow-hidden">
+<img alt="Mentora" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 opacity-60 group-hover:opacity-100" src="assets/15caab24-bf25-496e-99c0-b00f6f_d12129396c98.webp"/>
+<div class="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-panel via-transparent to-transparent"></div>
+</div>
+<div class="pt-10 pr-10 pb-10 pl-10 relative">
+<div class="-top-6 flex gap-2 absolute right-8 gap-x-2 gap-y-2">
+<a class="flex items-center justify-center hover:bg-slate-600 transition-colors text-white bg-slate-700 w-10 h-10 rounded-full" href="#">
+<svg data-icon-set="solar" data-solar="basketball-bold" height="1em" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M6.865 20.583A9.96 9.96 0 0 1 3.339 17A9.96 9.96 0 0 1 2 12.159l.145.028c2.949.581 6.304-.469 9.061-2.162q.545-.334 1.065-.706c.413.516.783 1.04 1.08 1.556c.375.647.713 1.417 1.015 2.24q-.778.377-1.508.822c-2.792 1.699-5.174 4.176-5.992 6.644zm9.395.465a10 10 0 0 1-8.04.21l.069-.204c.663-2.002 2.72-4.237 5.348-5.836q.592-.36 1.206-.667c.252.83.471 1.671.655 2.462a51 51 0 0 1 .699 3.597l.008.053l.002.012v.004z" fill="currentColor" fill-rule="evenodd"/><path d="M16.226 13.943c1.887-.72 3.811-.996 5.477-.63l.204.045a10 10 0 0 1-.71 2.57a9.95 9.95 0 0 1-3.538 4.317l-.013-.079a52 52 0 0 0-.687-3.494a40 40 0 0 0-.733-2.73m-2.773-5.545c1.728-1.469 3.087-3.21 3.672-4.949l.01-.03A9.96 9.96 0 0 1 20.66 7A9.95 9.95 0 0 1 22 11.842c-1.995-.431-4.186-.1-6.256.68c-.32-.864-.685-1.687-1.094-2.397a14 14 0 0 0-1.197-1.728M8.319 3.454a35 35 0 0 0-.6-.465l-.023-.016a9.95 9.95 0 0 1 5.5-.902c.887.107 1.757.333 2.584.67l-.077.229c-.477 1.418-1.65 2.95-3.228 4.29a32 32 0 0 0-2.203-2.16A42 42 0 0 0 8.32 3.453m2.1 5.294c-2.586 1.588-5.55 2.449-7.987 1.969l-.342-.068a10 10 0 0 1 4.19-6.853l.328.239l.002.001l.01.007l.039.029l.154.115a40 40 0 0 1 2.456 2.03c.66.592 1.358 1.26 2.013 1.965q-.42.293-.863.566" fill="currentColor"/></svg>
+</a>
+</div>
+<h3 class="text-3xl font-medium text-white tracking-tight mb-1">Elena Rostova</h3>
+<p class="text-xs uppercase tracking-widest mb-4 text-orange-400">Diretora de Arte Líder</p>
+<p class="text-sm text-slate-500">Polygon Studios</p>
+</div>
+</div>
+<div class="bg-panel p-0 group relative overflow-hidden">
+<div class="aspect-[4/3] bg-slate-800 relative overflow-hidden">
+<img alt="Mentor" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 opacity-60 group-hover:opacity-100" src="assets/4f4590c0-f760-4c47-8347-9ed570_078203afc949.webp"/>
+<div class="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-panel via-transparent to-transparent"></div>
+</div>
+<div class="p-10 relative">
+<div class="-top-6 flex gap-2 absolute right-8 gap-x-2 gap-y-2">
+<a class="flex items-center justify-center hover:bg-slate-600 transition-colors text-white bg-slate-700 w-10 h-10 rounded-full" href="#">
+<iconify-icon icon="solar:basketball-bold" width="18"></iconify-icon>
+</a>
+</div>
+<h3 class="text-3xl font-medium text-white tracking-tight mb-1">Marcus Thorne</h3>
+<p class="text-xs uppercase tracking-widest mb-4 text-orange-400">Desenvolvedor Sênior de Motion</p>
+<p class="text-sm text-slate-500">Spectra Inc.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- student-showcase -->
+<section class="overflow-hidden pt-24 pb-24 relative">
+<div class="max-w-7xl mr-auto ml-auto pr-6 pl-6">
+<div class="flex flex-col md:flex-row border-white/5 border-b mb-16 pb-8 items-end justify-between">
+<div class="flex gap-8 text-sm font-medium">
+<button class="text-slate-500 hover:text-white transition-colors year-btn" data-year="2022">2022</button>
+<button class="text-slate-500 hover:text-white transition-colors year-btn" data-year="2023">2023</button>
+<button class="-mb-8.5 text-orange-400 border-orange-400 border-b-2 year-btn active-year" data-year="2024">2024</button>
+<button class="text-slate-500 hover:text-white transition-colors year-btn" data-year="2025">2025</button>
+</div>
+<h2 class="text-4xl md:text-6xl font-medium text-white tracking-tight mt-8 md:mt-0">Vitrine dos Alunos</h2>
+</div>
+<div class="relative">
+<div class="absolute left-0 top-0 bottom-0 w-24 z-10 pointer-events-none" style="background: linear-gradient(to right, #0B0C15 0%, transparent 100%);"></div>
+<div class="absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none" style="background: linear-gradient(to left, #0B0C15 0%, transparent 100%);"></div>
+<div class="overflow-hidden">
+<div class="flex transition-transform duration-500 ease-out gap-x-8 gap-y-8" id="showcase-carousel" style="transform: translateX(-1263px);">
+<div class="group relative flex-shrink-0 w-full md:w-[calc(33.333%-1.33rem)]">
+<div class="aspect-[4/5] bg-slate-800 overflow-hidden relative">
+<img alt="Arte" class="transition-transform duration-700 group-hover:scale-105 w-full h-full object-cover" src="assets/96e3ccfa-3799-4c9c-9f2a-263c0f_aa6856a3cfca.webp"/>
+<div class="bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 absolute top-0 right-0 bottom-0 left-0"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<h4 class="text-2xl font-medium text-white mb-2">Sarah Jenkins</h4>
+<div class="flex justify-between items-end">
+<span class="text-xs uppercase tracking-widest text-slate-300">Tipografia Cinética</span>
+<button class="bg-white/10 backdrop-blur-md px-3 py-1 rounded text-xs text-white border border-white/10">Ver</button>
+</div>
+</div>
+</div>
+</div>
+<div class="group flex-shrink-0 md:w-[calc(33.333%-1.33rem)] w-full relative">
+<div class="aspect-[4/5] overflow-hidden border-white/5 border relative">
+<img alt="Arte" class="transition-transform duration-700 group-hover:scale-105 mix-blend-lighten w-full h-full object-cover" src="assets/a032328b-a082-425f-8870-b52225_e9abfaab6ab2.webp"/>
+<div class="flex absolute top-0 right-0 bottom-0 left-0 items-center justify-center">
+<span class="text-[180px] font-bold text-white opacity-75 mix-blend-overlay">R</span>
+</div>
+<div class="absolute bottom-6 left-6 right-6">
+<h4 class="text-2xl font-medium text-white mb-2">David Kim</h4>
+<div class="flex justify-between items-end">
+<span class="text-xs uppercase tracking-widest text-slate-300">Geometria Abstrata</span>
+<button class="px-3 py-1 rounded text-xs text-white shadow-lg bg-orange-600 shadow-orange-500/30">Vencedor</button>
+</div>
+</div>
+</div>
+</div>
+<div class="group relative flex-shrink-0 w-full md:w-[calc(33.333%-1.33rem)]">
+<div class="aspect-[4/5] bg-slate-800 overflow-hidden relative">
+<img alt="Arte" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/917d6f93-fb36-439a-8c48-884b67_1e33efa61316.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<h4 class="text-2xl font-medium text-white mb-2">Alex Chen</h4>
+<div class="flex justify-between items-end">
+<span class="text-xs uppercase tracking-widest text-slate-300">Visualização de Produto</span>
+<button class="bg-white/10 backdrop-blur-md px-3 py-1 rounded text-xs text-white border border-white/10">Ver</button>
+</div>
+</div>
+</div>
+</div>
+<div class="group relative flex-shrink-0 w-full md:w-[calc(33.333%-1.33rem)]">
+<div class="aspect-[4/5] bg-slate-800 overflow-hidden relative">
+<img alt="Arte" class="transition-transform duration-700 group-hover:scale-105 w-full h-full object-cover" src="assets/448cc80c-2ef0-44f1-aa35-fb915b_39ffa6a2c4e7.webp"/>
+<div class="bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 absolute top-0 right-0 bottom-0 left-0"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<h4 class="text-2xl font-medium text-white mb-2">Maya Thompson</h4>
+<div class="flex justify-between items-end">
+<span class="text-xs uppercase tracking-widest text-slate-300">Composição 3D</span>
+<button class="bg-white/10 backdrop-blur-md px-3 py-1 rounded text-xs text-white border border-white/10">Ver</button>
+</div>
+</div>
+</div>
+</div>
+<div class="group relative flex-shrink-0 w-full md:w-[calc(33.333%-1.33rem)]">
+<div class="aspect-[4/5] bg-slate-800 overflow-hidden relative">
+<img alt="Arte" class="transition-transform duration-700 group-hover:scale-105 w-full h-full object-cover" src="assets/dee707e7-67d1-4c28-9ed8-e0f71b_5de9129af8a5.webp"/>
+<div class="bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 absolute top-0 right-0 bottom-0 left-0"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<h4 class="text-2xl font-medium text-white mb-2">Jordan Lee</h4>
+<div class="flex justify-between items-end">
+<span class="text-xs uppercase tracking-widest text-slate-300">Motion Graphics</span>
+<button class="bg-white/10 backdrop-blur-md px-3 py-1 rounded text-xs text-white border border-white/10">Ver</button>
+</div>
+</div>
+</div>
+</div>
+<div class="group relative flex-shrink-0 w-full md:w-[calc(33.333%-1.33rem)]">
+<div class="aspect-[4/5] bg-slate-800 overflow-hidden relative">
+<img alt="Arte" class="transition-transform duration-700 group-hover:scale-105 w-full h-full object-cover" src="assets/4d3f4658-ecfd-47b7-8318-ab5e0f_e423d2432bfc.webp"/>
+<div class="bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 absolute top-0 right-0 bottom-0 left-0"></div>
+<div class="absolute bottom-6 left-6 right-6">
+<h4 class="text-2xl font-medium text-white mb-2">Emma Wilson</h4>
+<div class="flex justify-between items-end">
+<span class="text-xs uppercase tracking-widest text-slate-300">Arte Digital</span>
+<button class="bg-white/10 backdrop-blur-md px-3 py-1 rounded text-xs text-white border border-white/10">Ver</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-center gap-4 mt-16">
+<button class="flex hover:bg-white hover:text-dark transition-all text-slate-400 w-12 h-12 border-white/10 border items-center justify-center" id="showcase-prev">
+<iconify-icon icon="solar:arrow-left-linear" width="20"></iconify-icon>
+</button>
+<button class="flex hover:bg-white hover:text-dark transition-all text-slate-400 w-12 h-12 border-white/10 border items-center justify-center" id="showcase-next">
+<iconify-icon icon="solar:arrow-right-linear" width="20"></iconify-icon>
+</button>
+</div>
+</div>
+</section>
+
+<!-- pricing -->
+<section class="overflow-hidden border-white/5 border-b pt-32 pb-32 relative">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[500px] blur-[120px] rounded-full pointer-events-none mix-blend-screen bg-orange-900/10"></div>
+<div class="z-10 max-w-7xl mr-auto ml-auto pr-6 pl-6 relative">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+<div class="max-w-2xl">
+<div class="flex items-center gap-3 mb-4">
+<span class="w-1 h-1 rounded-full bg-orange-500"></span>
+<span class="text-xs font-medium tracking-widest uppercase text-orange-400">Inscrições Abertas</span>
+</div>
+<h2 class="md:text-6xl text-4xl font-medium text-white tracking-tight mb-6">Invista no seu futuro criativo</h2>
+<p class="text-lg text-slate-400 leading-relaxed max-w-md">Escolha o caminho de aprendizado que cabe na sua agenda. Todos os planos incluem acesso vitalício ao material do curso e arquivos de projeto.</p>
+</div>
+<div class="flex bg-white/5 border-white/5 border rounded-full p-1 backdrop-blur-sm items-center relative isolation-auto">
+<div class="absolute top-1 bottom-1 left-1 w-32 bg-[#ffffff]/10 rounded-full shadow-lg shadow-white/5 transition-transform duration-300 ease-out z-0" id="active-pill" style="transform: translateX(0%); --border-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0)); --border-radius-before: 9999px;"></div>
+<button class="relative z-10 w-32 py-2.5 text-xs font-semibold tracking-widest uppercase text-white transition-colors duration-300" id="btn-monthly" onclick="switchPlan('monthly')">Mensal</button>
+<button class="relative z-10 w-32 py-2.5 text-xs font-medium tracking-widest uppercase text-slate-400 hover:text-white transition-colors duration-300" id="btn-yearly" onclick="switchPlan('yearly')">Anual</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+<div class="group md:p-10 hover:bg-white/[0.02] transition-all duration-300 flex flex-col overflow-hidden bg-gradient-to-br from-gray-500/10 via-gray-500/0 to-gray-500/10 pt-8 pr-8 pb-8 pl-8 relative" style="position: relative; --border-gradient: linear-gradient(270deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0))">
+<div class="mb-8">
+<span class="text-xs font-semibold tracking-widest text-slate-500 uppercase mb-4 block">Independente</span>
+<div class="flex items-baseline gap-1 transition-opacity duration-300" id="price-card-1">
+<span class="text-4xl font-medium text-white tracking-tight price-amount">R$49</span>
+<span class="text-sm text-slate-500 font-medium price-period">/mês</span>
+</div>
+</div>
+<p class="text-sm text-slate-400 mb-8 pb-8 border-b border-white/5 leading-relaxed">Perfeito para alunos autodidatas que querem dominar o currículo no seu próprio ritmo.</p>
+<ul class="flex flex-col gap-4 mb-10 flex-1">
+<li class="flex items-start gap-3 text-sm text-slate-300">
+<iconify-icon class="mt-0.5 text-lg shrink-0 text-orange-400" icon="solar:check-circle-bold"></iconify-icon>
+<span>Currículo Completo de 12 Semanas</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-slate-300">
+<iconify-icon class="mt-0.5 text-lg shrink-0 text-orange-400" icon="solar:check-circle-bold"></iconify-icon>
+<span>Arquivos de Projeto &amp; Materiais</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-slate-300">
+<iconify-icon class="mt-0.5 text-lg shrink-0 text-orange-400" icon="solar:check-circle-bold"></iconify-icon>
+<span>Atualizações Vitalícias</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-slate-500 line-through decoration-slate-600/50">
+<svg class="text-slate-600 mt-0.5 text-lg shrink-0" data-icon-set="solar" data-solar="close-circle-linear" height="1em" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="m14.5 9.5l-5 5m0-5l5 5" stroke-linecap="round"/></g></svg>
+<span>Feedback de Mentor</span>
+</li>
+</ul>
+<button class="uppercase hover:bg-slate-800 hover:text-dark transition-all duration-300 group-hover:border-white text-xs font-semibold text-white tracking-widest w-full border-white/10 border pt-4 pb-4">Começar a Aprender</button>
+</div>
+<div class="md:p-10 flex flex-col overflow-hidden bg-orange-950/10 pt-8 pr-8 pb-8 pl-8 relative" style="position: relative; --border-gradient: linear-gradient(270deg, rgba(255, 255, 255, 0), rgba(234, 88, 12, 0.5), rgba(255, 255, 255, 0)); mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent); -webkit-mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent);">
+<div class="absolute inset-0 bg-gradient-to-b via-transparent to-transparent pointer-events-none from-orange-500/5"></div>
+<div class="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent to-transparent opacity-50 via-orange-500"></div>
+<div class="relative z-10 flex flex-col h-full">
+<div class="flex justify-between items-start mb-8">
+<div>
+<span class="text-xs font-semibold tracking-widest uppercase mb-4 block text-orange-400">Turma ao Vivo</span>
+<div class="flex items-baseline gap-1 transition-opacity duration-300" id="price-card-2">
+<span class="text-4xl font-medium text-white tracking-tight text-glow price-amount">R$99</span>
+<span class="text-sm text-slate-400 font-medium price-period">/mês</span>
+</div>
+</div>
+<span class="text-white text-[10px] font-semibold uppercase tracking-widest px-2 py-1 rounded shadow-lg bg-orange-500 shadow-orange-500/20">Popular</span>
+</div>
+<p class="text-sm mb-8 pb-8 border-b leading-relaxed text-orange-100/70 border-orange-500/20">A experiência completa. Junte-se a uma turma global de artistas com sessões ao vivo semanais e revisões.</p>
+<ul class="flex flex-col gap-4 mb-10 flex-1">
+<li class="flex items-start gap-3 text-sm text-white">
+<iconify-icon class="mt-0.5 text-lg shrink-0 text-orange-400" icon="solar:check-circle-bold"></iconify-icon>
+<span>Tudo do plano Independente</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-white">
+<iconify-icon class="mt-0.5 text-lg shrink-0 text-orange-400" icon="solar:check-circle-bold"></iconify-icon>
+<span>Sessões de Q&amp;A Semanais ao Vivo</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-white">
+<iconify-icon class="mt-0.5 text-lg shrink-0 text-orange-400" icon="solar:check-circle-bold"></iconify-icon>
+<span>Revisão Profissional de Trabalhos</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-white">
+<iconify-icon class="mt-0.5 text-lg shrink-0 text-orange-400" icon="solar:check-circle-bold"></iconify-icon>
+<span>Comunidade Privada no Discord</span>
+</li>
+</ul>
+<button class="w-full py-4 text-white text-xs font-semibold uppercase tracking-widest transition-all duration-300 shadow-lg bg-orange-600 hover:bg-orange-500 shadow-orange-600/20 hover:shadow-orange-600/40">Garantir Minha Vaga</button>
+</div>
+</div>
+<div class="group md:p-10 hover:bg-white/[0.02] transition-all duration-300 flex flex-col overflow-hidden bg-gradient-to-br from-gray-500/10 via-gray-500/0 to-gray-500/10 px-8 py-8 relative" style="position: relative; --border-gradient: linear-gradient(270deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0))">
+<div class="mb-8">
+<span class="text-xs font-semibold tracking-widest text-slate-500 uppercase mb-4 block">Mentoria</span>
+<div class="flex items-baseline gap-1 transition-opacity duration-300" id="price-card-3">
+<span class="text-4xl font-medium text-white tracking-tight price-amount">R$249</span>
+<span class="text-sm text-slate-500 font-medium price-period">/mês</span>
+</div>
+</div>
+<p class="text-sm text-slate-400 mb-8 pb-8 border-b border-white/5 leading-relaxed">Orientação direta 1 a 1 para profissionais que buscam acelerar o crescimento na carreira.</p>
+<ul class="flex flex-col gap-4 mb-10 flex-1">
+<li class="flex items-start gap-3 text-sm text-slate-300">
+<iconify-icon class="mt-0.5 text-lg shrink-0 text-orange-400" icon="solar:check-circle-bold"></iconify-icon>
+<span>Tudo do plano Turma</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-slate-300">
+<iconify-icon class="mt-0.5 text-lg shrink-0 text-orange-400" icon="solar:check-circle-bold"></iconify-icon>
+<span>4 Calls de Estratégia 1 a 1</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-slate-300">
+<iconify-icon class="mt-0.5 text-lg shrink-0 text-orange-400" icon="solar:check-circle-bold"></iconify-icon>
+<span>Direcionamento de Portfólio</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-slate-300">
+<iconify-icon class="mt-0.5 text-lg shrink-0 text-orange-400" icon="solar:check-circle-bold"></iconify-icon>
+<span>Rede de Indicação para Agências</span>
+</li>
+</ul>
+<button class="uppercase hover:bg-slate-800 hover:text-dark transition-all duration-300 group-hover:border-white text-xs font-semibold text-white tracking-widest w-full border-white/10 border pt-4 pb-4">Candidatar-se à Mentoria</button>
+</div>
+</div>
+<div class="mt-20 pt-10 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-8">
+<p class="text-xs font-medium tracking-widest text-slate-500 uppercase">Confiado por artistas dos melhores estúdios</p>
+<div class="flex flex-wrap justify-center gap-8 md:gap-12 opacity-30 grayscale mix-blend-screen select-none">
+<span class="text-lg font-bold text-white tracking-tight">Google</span>
+<span class="text-lg font-bold font-serif text-white">Apple</span>
+<span class="text-lg font-bold font-sans text-white tracking-tighter">Meta</span>
+<span class="text-lg font-bold font-mono text-white">Netflix</span>
+<span class="text-lg font-bold font-sans text-white italic">Nike</span>
+<span class="text-lg font-bold font-sans text-white">Buck</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- footer -->
+<footer class="overflow-hidden border-white/5 border-t pt-20 pb-10 relative">
+<div class="-translate-x-1/2 pointer-events-none bg-gradient-to-b from-blue-500/0 via-blue-500/10 to-blue-500/0 opacity-30 w-[800px] h-[800px] rounded-full absolute bottom-0 left-1/2 blur-3xl translate-y-1/3"></div>
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 mb-20">
+<div class="flex flex-col justify-between h-full">
+<a class="inline-flex items-center justify-center bg-center w-[140px] h-[36px] bg-[url(https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/3b763a66-5dbf-4079-af7e-a616cc333698_320w.png)] bg-cover rounded-full" href="#"></a>
+<div class="mt-auto">
+<div class="flex gap-4 mb-8">
+<a class="flex items-center justify-center hover:text-white hover:border-white transition-all bg-center text-slate-400 w-10 h-10 bg-[url(https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/e66c0296-2c66-4807-ab74-9626c9bf90ca_320w.webp)] bg-cover border-white/10 border rounded-full" href="#">
+<iconify-icon icon="solar:facebook-bold" width="16"></iconify-icon>
+</a>
+<a class="flex items-center justify-center hover:text-white hover:border-white transition-all bg-center text-slate-400 w-10 h-10 bg-[url(https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/c3f33b24-5083-4ed7-890e-acca5261bec4_320w.webp)] bg-cover border-white/10 border rounded-full" href="#">
+<iconify-icon icon="solar:twitter-bold" width="16"></iconify-icon>
+</a>
+<a class="flex items-center justify-center hover:text-white hover:border-white transition-all bg-center text-slate-400 w-10 h-10 bg-[url(https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/45346b2f-1ebf-4fd1-ad60-5f4c935b534f_320w.webp)] bg-cover border-white/10 border rounded-full" href="#">
+<iconify-icon icon="solar:instagram-bold" width="16"></iconify-icon>
+</a>
+</div>
+<p class="text-xs text-slate-600">Copyright © FLUX 2024. Todos os direitos reservados.</p>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex flex-col gap-4">
+<h5 class="text-xs font-bold uppercase tracking-widest text-orange-400">Plataforma</h5>
+<a class="text-xs font-medium text-slate-400 hover:text-white transition-colors" href="#">Cursos</a>
+<a class="text-xs font-medium text-slate-400 hover:text-white transition-colors" href="#">Workshops</a>
+<a class="text-xs font-medium text-slate-400 hover:text-white transition-colors" href="#">Podcast</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-xs font-bold uppercase tracking-widest text-orange-400">Empresa</h5>
+<a class="text-xs font-medium text-slate-400 hover:text-white transition-colors" href="#">Sobre</a>
+<a class="text-xs font-medium text-slate-400 hover:text-white transition-colors" href="#">Carreiras</a>
+<a class="text-xs font-medium text-slate-400 hover:text-white transition-colors" href="#">Contato</a>
+</div>
+<div class="col-span-2 md:col-span-2 pt-8 md:pt-0 border-t md:border-t-0 border-white/5">
+<h5 class="text-xs font-bold text-white uppercase tracking-widest mb-4">Receba novidades</h5>
+<form class="flex flex-col gap-4">
+<input class="bg-white/5 border border-white/10 px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none transition-colors w-full focus:border-orange-500" placeholder="Digite seu e-mail" type="email"/>
+<button class="uppercase hover:bg-slate-800 hover:text-dark transition-all duration-300 group-hover:border-white text-xs font-semibold text-white tracking-widest w-full border-white/10 border pt-4 pb-4">Inscrever</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- js -->
+<!-- bootstraps the Unicorn Studio scene used as the animated hero/page background -->
+<script src="assets/js/unicorn-studio.js"></script>
+<!-- feature-detail (Curriculum) carousel: rotates module image, number, sub, title, desc, dots and prev/next -->
+<script src="assets/js/feature-carousel.js"></script>
+<!-- year tab toggle in Student Showcase -->
+<script src="assets/js/showcase-tabs.js"></script>
+<!-- Student Showcase carousel slider (prev/next, responsive resize) -->
+<script src="assets/js/showcase-carousel.js"></script>
+<!-- pricing plan toggle (Mensal / Anual) — exposes window.switchPlan used by inline button onclicks -->
+<script src="assets/js/pricing-toggle.js"></script>
+<!-- broken image fallback handler — must be loaded last so it observes all <img> tags -->
+<script src="assets/js/img-fallback.js"></script>
+
+</body>
+</html>
