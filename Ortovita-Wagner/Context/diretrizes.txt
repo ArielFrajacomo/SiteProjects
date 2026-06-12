@@ -1,0 +1,56 @@
+fazer uma página da web usando react, tailwind, e gsap
+você é um profissional da área de desenvolvimento web, você possui conhecimentos de SEO, Design, UX, Psicologia e ganhou inúmeros prêmios.
+
+
+
+
+
+
+usando os dados do context, o wagner-site s~ao as informações apresentadas ao cliente, ele deseja as cores em dourado e preto, o contador de tempo no header na parte da direita, e o bot'ao quero me inscrever
+
+no corpo do site, precisa ter o FAC, politica de privacidade, modulo do curso que eh divido em 2 partes, teorico e pratico,
+
+mostre a garantia de 7 dias e coloque um campo para as datas e localizacao
+
+
+quero criar um site do zero, portanto delete tudo o que temos de estrutura do site atua, e use os sites/componentes dentro das pastas final .build como inspiracao para fazer o novo site
+
+o site deve ser moderno, SEO orientado, e feito de acordo com analises psicologicas para convers'ao de leeds
+
+por fim, o conteudo final do site deve ser relativo ao documento de texto conteudo-site.txt, tente nao inventar muitas informações para nao sair do escopo do produto e nem gerar algum problema judicial
+
+
+## Dados do curso
+Curso de Credenciamento: Cirurgia Navegada em Tempo Real
+Duração: 8 horas (Carga horária total)
+Perfil: Cirurgiões-dentistas com vivência em implantodontia.
+
+Cronograma de Imersão (Agenda 08:00 – 17:00)
+Horário         Módulo                              Foco Prático
+08:00 - 09:30   Fundamentos e Software              Workflow: do DICOM ao planejamento final; segmentação e validação protética.
+09:30 - 10:30   O Protocolo de Registro             Hands-on: Calibração da peça de mão e registro (tracker) no manequim.
+10:30 - 12:30   Cirurgia Navegada (Hands-on I)      Perfuração guiada em casos de baixa complexidade (foco em accuracy).
+12:30 - 13:30   Intervalo                           Networking e Discussão de Casos
+13:30 - 15:30   Navegação Avançada (Hands-on II)    Simulação de cirurgias em osso atrófico ou implantes zigomáticos (desafios de angulação).
+15:30 - 16:30   Gestão de Falhas e Erros            Como identificar o drift (desvio) do sistema e correção intraoperatória.
+16:30 - 17:00   Avaliação e Certificação            Teste prático de precisão (avaliação de desvios angulares/coronais).
+
+Detalhamento Estratégico
+1. Módulo de Software (Otimização)
+Não perca tempo com noções básicas de software. 
+Foque no Workflow Digital 100%:
+- Importação de arquivos para o software de navegação.
+- Configuração do Zygoma-Protocol (se o sistema permitir).
+- Verificação de colisão e segurança (limites ósseos e proximidade de estruturas nobres).
+
+2. Hands-on: A Regra dos "3 Pilares"
+Para garantir que o aluno saia credenciado, a prática deve ser avaliada nestes pontos críticos:
+- Calibração Precisa: Se a calibração falhar, a cirurgia falha. Enfatizar a conferência de calibração repetida durante o hands-on.
+- Registro (Registration): Dominar o registro da maxila/mandíbula. É o momento de maior erro humano.
+- Percepção Visual: Treinar o aluno a não olhar para a boca, mas sim para o monitor (treinamento neurocognitivo).
+
+3. Avaliação de Desempenho (Critério de Credenciamento)
+Para tornar o credenciamento acadêmico e profissional, utilize métricas quantitativas ao final do dia:
+- Desvio Angular: Medição do desvio entre o plano virtual e o realizado.
+- Desvio Coronal/Apical: Utilização de software de sobreposição (superimposition) para comparar a broca final com o planejamento inicial.
+- Nota de aprovação: Apenas cirurgiões que atingirem uma margem de segurança pré-estabelecida (ex: < 1mm de desvio no ápice) recebem a certificação de operação do sistema.
